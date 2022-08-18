@@ -1,0 +1,74 @@
+
+Objective of your presentation: Given the data provided, give your perspective on possible uses  to provide billing metrics to the GMT customer.   
+Questions you should address: 
+1. What was your process for analyzing the data and what tools did you use to perform  the analysis? 
+2. Was there anything that you found interesting or irrelevant in the data?
+ 3. What presentation of the data would you recommend reviewing with the customer  (charts, graphs, reporting)? Provide examples and be prepared to show your work. 
+4. Based on the data provided, if this customer wanted insight into where a new DC  should be built: 
+a. How would you approach the problem? 
+b. What other data would be useful in that determination? 
+c. An exact answer is not necessary, just your thought process to work through  the recommendation. 
+
+
+
+
+
+
+
+
+
+
+
+Didnt really need the zip codes for carrier and recipient when you already have city and state
+
+Deleted the package facts that were unnecessary like the weight 
+
+I would have liked the order date
+
+Change the dates to just dates not the time
+
+Change the time from military time to standard time by formatting the cells 
+
+Expected delivery time and actual delivery time have have wrong dates that's odd with the times of 1901 as the year so I will ask more questions about the data
+-- I wanted to change the expected delivery time and actual delivery time but the dates on them are wrong dated back to 1901
+-- but if they were right I would down the time elapsed for the faster service types like next day, two day, and three day service types  
+
+-- I would have liked to have the order dates so I can compare the service types to when the order was placed to the expected and actual dates and times to be delivered
+
+Just Wanted to keep in mind customer satisfaction and money
+
+
+
+-- These are the types of charges given in this dataset
+
+-- First I would talk about the residential delivery indicator 
+-- I would change that data type to a decimal and give the percentage of each type given (R,U,C) and make that a charge because i should go into the shipper cost
+-- Next I would look into the generic zone ill keep the zone but add the exact mileage per shipment so it can be accounted for with the other charges
+-- Next I would like to know what goes into the asccessorial and fuel charges because based on this sample thats where 
+-- I would make my money at increasing these charges and keeping freight charges or rates the same for the type of service
+
+     
+Select Generic_Service_Type, Total_Closed_Charge_Amount, Total_Closed_Credit_Amount, Base_Freight_Charges, Fuel_Charges, Accessorial_Charges, Generic_Zone, Residential_Delivery_Indicator
+From Portfolio..FedExTestData
+
+-- Then Ill break down the service type and all of the charges made 
+-- and see who uses what service more and tell the customer to charge more accordingly 
+
+Generic Zones for fedex
+Zone 1: 0-50 miles.
+Zone 2: 51-150 miles.
+Zone 3: 151-300 miles.
+Zone 4: 301-600 miles.
+Zone 5: 601-1,000 miles.
+Zone 6: 1,001-1,400 miles.
+Zone 7: 1,401-1,800 miles.
+Zone 8: 1,801+ miles.
+
+
+
+
+--- Top 3 states that you ship from
+--- TX GA CA
+-- I would start to look into the top states that ship the most products along with the corresponding cities 
+-- and compare greatest to least shipping state and city then deep dive into the cost along with the envionment of the city and state.
+
